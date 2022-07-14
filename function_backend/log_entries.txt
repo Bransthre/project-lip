@@ -1,0 +1,32 @@
+@2022-7-10-938-
+A quick status update
+I am just listening to Brahm's Symphony while starting my work today. Today feels a bit better because I finished a lot of work prior to today, which provides me quite a gap to make myself less guilty about being lazy with. Still, since the work I do today is quite important to the progress of the project, I can't loose up too much!
+Currently working on the graph-represented structuring of EI interventions.
+#positive|neutral|
+@2022-7-10-961-
+I am currently working to set LinkedIn up.
+It's a bit nervewrecking, but I'll see what I can do. I'm assuming that most of the update on this website comes after I finished my resume.
+#positive|neutral|
+@2022-7-11-598-
+It's morning and I woke up earlier than usual. My family just left to live at another place, so I should be readying for another two weeks of independent life. I have to keep reminding myself that even though I am currently alone, I am not independent.
+#negative|neutral|
+@2022-7-11-626-
+I am currently working on Leetcode as a warmup for the day and a less time-consuming task for before driving school. I think I will also slowly get adjusted to alone life.
+#neutral|positive|
+@2022-7-11-952-
+Just got back from driving school. Because I didn't ate much today, driving becomes very much more exhausting and nervous.
+#neutral|negative|
+@2022-7-12-688-
+Currently Working at the Cafe
+#neutral|positive|
+@2022-7-12-712-
+Currently working at the cafe, and re-implementing some of the previous ML utilities in Project Lip. Will be able to finish the training function soon, and then it's the predict!
+#neutral|positive|
+@2022-7-12-737-
+#neutral|neutral|
+@2022-7-12-762-
+A bit tired and hungry from morning's work, but will keep on for a bit.
+#neutral|neutral|
+@2022-7-12-835-
+Was leetcoding, stayed at cafe for too long. But just one question left, I'll finish it before I go home and call it a day for a bit.
+#neutral|negative|

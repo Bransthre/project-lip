@@ -1,0 +1,55 @@
+@examples
+"Option Menu instruction"
+"Option 1"
+"Option 2"
+"Option 3"
+end of article
+
+@log_loc
+Eatery
+Study Space
+Workplace
+Home
+end of article
+
+@social_deg
+1
+2
+3
+4
+5
+end of article
+
+@work_deg
+1
+2
+3
+4
+5
+end of article
+
+@rest_deg
+1
+2
+3
+4
+5
+end of article
+
+@prompts
+"Ah. Uh... I haven't quite prepared my questions yet.\nBut for emotion detection, I just need you to speak about how your mind is going so far. Can you tell me about it?"
+end of article
+
+@valence
+negative
+neutral
+positive
+end of article
+
+@activation
+negative
+neutral
+positive
+end of article
+
+compulsory end of file line
