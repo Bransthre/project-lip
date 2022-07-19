@@ -201,6 +201,10 @@ class MainScreen(tk.Tk):
         self.rowconfigure(0, minsize = 800, weight = 1)
         self.columnconfigure(1, minsize = 800, weight = 1)
         OptionsWindow(self)
+    
+    def push_survey_action(self, is_short = False):
+        survey_screen = SurveyScreen(self, is_short = is_short)
+        survey_screen.mainloop()
 
 class OptionsWindow(ttk.LabelFrame):
     """
@@ -722,11 +726,11 @@ class PomodoroScreen(ttk.Frame):
             """
             time_display_lbl = pomodoro_screen.time_display_lbl
             max_cnt = sect_cnt
-            work_msg = work_msg or \
-                f"Work period, number {max_cnt - sect_cnt}, starts."
-            rest_msg = rest_msg or \
-                f"Work period, number {max_cnt - sect_cnt}, ends."
             while sect_cnt:
+                work_msg = work_msg or \
+                    f"Work period, number {max_cnt - sect_cnt}, starts."
+                rest_msg = rest_msg or \
+                    f"Work period, number {max_cnt - sect_cnt}, ends."
                 notif_agent.push_pomodoro_notification(
                     sect_cnt, 
                     work_msg, 
@@ -871,7 +875,7 @@ class SurveyScreen(tk.Toplevel):
         Constructor method.
 
         Args:
-            master (tK.tk): The homescreen of current management system.
+            master (tK.tk): The mainscreen of current management system.
         """
         super().__init__(master)
         self.title('Lip (Survey Interface)')
@@ -1066,11 +1070,12 @@ class SurveyWindow(ttk.Frame):
         if self.message_ind < 9:
             return
         elif self.message_ind == 9:
+            self.message_ind += 1
             self.answer_menu.grid_remove()
             self.answer_txt.grid(row = 1, column = 0, padx = 5, pady = 5)
-            prompt_list = self.get_survey_options("prompts")[1:]
-            self.jounral_ind = random.randint(0, len(prompt_list) - 1)
-            self.question_strvar.set(prompt_list[self.jounral_ind])
+            #prompt_list = self.get_survey_options("prompts")[1:]
+            #self.jounral_ind = random.randint(0, len(prompt_list) - 1)
+            #self.question_strvar.set(prompt_list[self.jounral_ind])
             self.proceed_btn.config(command = self.ask_emotion)
             self.skip_btn = ttk.Button(
                 text = "Skip Journal Entry",

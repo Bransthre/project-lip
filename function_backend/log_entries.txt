@@ -30,3 +30,12 @@ A bit tired and hungry from morning's work, but will keep on for a bit.
 @2022-7-12-835-
 Was leetcoding, stayed at cafe for too long. But just one question left, I'll finish it before I go home and call it a day for a bit.
 #neutral|negative|
+@2022-7-19-698-
+At the cafe now.
+Model tuning isn't going well recently, currently trying to solve leetcode first before I get to retuning the model.
+#neutral|negative|
+
+@2022-7-19-769-
+Studying at the cafe now, leetcoding as usual. Ready to fix interface bugs and retune models later, but I don't know how well this could go..
+#neutral|neutral|
+

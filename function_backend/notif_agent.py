@@ -303,7 +303,7 @@ def push_pomodoro_notification(cycle_cnt, msg_body, interval):
     notifier.show(notification.ToastNotification(message_doc))
     notif_tts("Hi, Your Pomodoro Clock has been updated!")
 
-def push_survey_notif(homescreen, is_short = False):
+def from_notif_push_survey(homescreen, is_short = False):
     """
     Method to push the survey notifications and launch the survey window.
 
@@ -339,11 +339,14 @@ def push_survey_notif(homescreen, is_short = False):
     xDoc = dom.XmlDocument()
     xDoc.load_xml(notifString)
     survey_notif = notification.ToastNotification(xDoc)
-    survey_screen = gui.SurveyScreen(homescreen, is_short = is_short)
+    #survey_screen = gui.SurveyScreen(homescreen, is_short = is_short)
     notifier.show(survey_notif)
     notif_tts(f"Hi, here is a {survey_title} I just prepared!")
-    print("visible?")
-    survey_screen.mainloop()
+    #survey_screen.mainloop()
+
+def push_survey_notif(homescreen, is_short = False):
+    from_notif_push_survey(homescreen, is_short)
+    homescreen.push_survey_action(is_short)
 
 def push_interventions(row):
     intervention_docs = in_ag.get_intervention_texts(row)
