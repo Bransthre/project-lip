@@ -15,15 +15,15 @@ def get_intervention_dialogues():
             curr_attr = processed_line[1:]
             dialogue_dict[curr_attr] = []
         else:
-            dialogue_dict[curr_attr].append(processed_line)
+            dialogue_dict[curr_attr].append(gl_ds.transform_msg(processed_line))
     return dialogue_dict
 
 def get_intervention_texts(row):
     data_row = ei_ds.convert_tuple_to_series(row)
     dialogue_lines = get_intervention_dialogues()
     return (
-        get_notification_doc('aaa', emotion_interventions(data_row, dialogue_lines)),
-        get_notification_doc('aaa', special_interventions(dialogue_lines))
+        get_notification_doc('Lip EI Unit:', emotion_interventions(data_row, dialogue_lines)),
+        get_notification_doc('Lip EI Unit:', special_interventions(dialogue_lines))
     )
 
 def emotion_interventions(row, custom_dict = None):

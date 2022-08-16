@@ -1,46 +1,54 @@
 @Condition_name
 Intervention_text
 @positivepositive
-Intervention_text
+Hey, {user_name}, it looks like a good point to take a small break now. Let’s gather up some tea to drink and chat for a while!
+Switch up a perspective? This question does look solvable after all!
 @positiveneutral
-Intervention_text
+You’re blanking off, {user_name}. If you keep dozing off like that, I’ll keep coming to interrupt you.
+Well, it’s not if that would always work. It’s been a long time since you started working too. How does a short break sound now?
+Switch up a perspective? This question does look solvable after all!
 @positivenegative
-Intervention_text
+Looks like you are immersed into something, {user_name}. I’ll not interrupt you too much, but remember to stay active for a bit! Maybe you should practice something outside your current works now?
 @neutralpositive
-Intervention_text
-Intervention_text
+It looks like today will not be so empty. Prepare for it, {user_name}! Imagine what we can challenge and try on our way and today. We’ll make it a day that even feels wistful to end! 
+Hey! Hey! Hoh! Let’s continue a bit more and take a deserved shift onto something else!
 @neutralneutral
-Intervention_text
+Hey, {user_name}, what are you working on now? Do you mind recording some details down in your mind and talk to me about it later?
+It looks like you are dealing with an interesting piece of work, I’d like to know more about it as well.
 @neutralnegative
-Intervention_text
-Intervention_text
+Have you yawned today, {user_name}? It seems to take oxygen into your brain, maybe it could activate yours for a bit from being dead for a while.
+Hey {user_name}, looks like you’re full? Do you want to move your body around a bit? If you’re still practicing things outside school, it could be a good moment to switch the work topics now!
+Stand up a bit and move around! I’ll be charging my battery meanwhile.
 @negativepositive
-Intervention_text
-Intervention_text
+{user_name}, {user_name}?  What’s on your mind now? You seem really focused on something, but I can’t tell what it is…
+Close your eyes for a bit, you have things you look forward to for tomorrow right? Step by step!
+Hey, {user_name}? You seem to be putting a lot of strength into your shoulders, relax a little.
+It looks like you’re doing huge amounts of mental work, try to take a bit of a break or read something else? It can probably calm your mind down.
 @negativeneutral
-Intervention_text
+Hi {user_name}, seems like you’re in the middle of something for a while. Hardwork deserves some rewards!
+Treating yourself a bit could also help you get off things that bother you too much. Solutions can’t just be built in a day or two, it’s fine to take some time!
 @negativenegative
-Intervention_text
-Intervention_text
+{user_name}? Remember to keep in touch with your surroundings. This is what you said to be human interaction, right? Things seem like a lot at times, but you’ve always created and handled the means to break through. I believe that this will just be one of them!
+But {user_name}, your vitality looks to be low for a bit. Do you mind telling me a bit about what has happened in the next survey?Disregarding that, it doesn’t seem like a good hour to work. Come back the next hour instead, alright?
 @work_3
-Intervention_text
+Looks like the day has started! Keep going on!
 @work_5
-Intervention_text
+Right, seems like at least half of the work should be done! Why not take a small break in between these work hours, coffee or tea?
 @work_7
-Intervention_text
+It looks like you have a lot of important deadlines coming up. Well, I know the work is significant and expected by others, but don't burn yourself out too much.
 @work_9
-Intervention_text
+9 hours? It's a bit absurd that you're expected that much, go take a bit of rest!
 @morning
-Intervention_text
+Good morning, hope today will go smooth regardless of the workload. Today's weather is not bad too!
 @noon
-Intervention_text
+Lunch time! What do you mean, lunch is important!
 @evening
-Intervention_text
+That was a long day. Well, time to get some dinner and rest at your place!
 @rest_2
-Intervention_text
+Getting enough rest is really important, but make sure you balance it out with some brain exercises! I'm sure that will help with Alzheimers.
 @rest_4
-Intervention_text
+Getting enough rest is important, but too much doesn't mean well either... well, unless it's a holiday! It feels nice to slack a bit, doesn't it.
 @neg_val
-Intervention_text
+Looks like something is really bothering you. If that'll help you feel better, tell me a bit about it?
 @neg_act
-Intervention_text
+Don't worry, there will always be a few days in a month that are lower than usual. It's not like I'm finding excuses for slacking!
