@@ -61,7 +61,7 @@ def push_survey_notif(homescreen, is_short = False):
     survey_task = 1
     def push_survey(sender, lorem):
         nonlocal survey_task
-        survey_screen = gui.SurveyScreen(homescreen, is_short = is_short)
+        survey_screen = gui.SurveyScreen(is_short = is_short)
         survey_task = survey_screen
         survey_screen.mainloop()
     activated_token = survey_notif.add_activated(push_survey)

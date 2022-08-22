@@ -79,7 +79,9 @@ def special_interventions(custom_dict = None):
     return all_sp_intervents
 
 def get_notification_doc(title, message):
-    msg_body = random.choice(message)
+    msg_body = 'Keep working on it!'
+    if message:
+        msg_body = random.choice(message)
     notif_doc_text = f"""
     <toast launch="app-defined-string">
     

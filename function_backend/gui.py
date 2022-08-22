@@ -203,7 +203,7 @@ class MainScreen(tk.Tk):
         OptionsWindow(self)
     
     def push_survey_action(self, is_short = False):
-        survey_screen = SurveyScreen(self, is_short = is_short)
+        survey_screen = SurveyScreen(is_short = is_short)
         survey_screen.mainloop()
 
 class OptionsWindow(ttk.LabelFrame):
@@ -865,19 +865,16 @@ class SettingsScreen(ttk.Frame):
         return lambda: update_event_handler_helper(attr_name)
 
 #Survey Screen
-class SurveyScreen(tk.Toplevel):
+class SurveyScreen(tk.Tk):
     """
     The great interface container for emotional survey-related options of this
     management system.
     """
-    def __init__(self, master, is_short = False):
+    def __init__(self, is_short = False):
         """
         Constructor method.
-
-        Args:
-            master (tK.tk): The mainscreen of current management system.
         """
-        super().__init__(master)
+        super().__init__()
         self.title('Lip (Survey Interface)')
         self.geometry('800x750')
         self.resizable(0, 0)

@@ -404,7 +404,7 @@ def __push_survey_notif_btn(homescreen, is_short = False):
     survey_task = 1
     def push_survey(sender, _):
         nonlocal survey_task
-        survey_screen = gui.SurveyScreen(homescreen, is_short = is_short)
+        survey_screen = gui.SurveyScreen(is_short = is_short)
         survey_task = survey_screen
         survey_screen.mainloop()
     activated_token = survey_notif.add_activated(push_survey)
