@@ -1138,9 +1138,12 @@ class SurveyWindow(ttk.Frame):
         Button event handler for terminating the short survey window.
         """
         self.end_survey()
+        notif_agent.push_interventions(row)
+        '''
         threading.Thread(
             target = lambda: notif_agent.push_interventions(row)
         ).start()
+        '''
     
     def upload_survey_results(self):
         """
