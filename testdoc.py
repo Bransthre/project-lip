@@ -172,4 +172,12 @@ def check_current_data_model():
             model = ei_dt.train_model(target_class, True, tr / 100)
 
 #execute section
+'''import function_backend.ei_ml_detection as testing_package
+testing_row = (100, 1, "Study Space", 2, 3, 3)
+test_row = testing_package.prepare_dataset("emotion", ei_ds.convert_tuple_to_series(testing_row))
+print(test_row)
+model = testing_package.train_model("emotion", True)
+print(model.predict(test_row))
+print(in_ag.get_intervention_dialogues()[model.predict(test_row)[0]])
+notif_agent.push_interventions(testing_row)'''
 print(ei_ds.get_today_data_properties())

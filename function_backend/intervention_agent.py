@@ -1,11 +1,11 @@
 from . import ei_database as ei_ds
-from . import ei_decision_tree as ei_dt
+from . import ei_ml_detection as ei_dt
 from . import global_database as gl_ds
 import random
 import datetime
 
 def get_intervention_dialogues():
-    dialogue_file = open(gl_ds.CWD + r'/function_backend/dialogue_eii.txt')
+    dialogue_file = open(gl_ds.CWD + r'/function_backend/dialogue_eii.txt', encoding="utf-8")
     dialogue_lines = dialogue_file.readlines()
     dialogue_dict = {}
     curr_attr = ""
@@ -28,23 +28,15 @@ def get_intervention_texts(row):
 
 def emotion_interventions(row, custom_dict = None):
     print("DEBUG: currently dealing with emotion")
+    print(f"{row} as row for prediction")
     if custom_dict is None:
         custom_dict = get_intervention_dialogues()
-    num_to_class_dict = {
-        -1: "negative",
-        0: "neutral",
-        1: "positive"
-    }
-    model_val = ei_dt.train_model(target_class = "user_valence", verbose = True)
-    val_status = num_to_class_dict[model_val.predict(row)]
-    model_act = ei_dt.train_model(target_class = "user_activation", verbose = True)
-    act_status = num_to_class_dict[model_act.predict(row)]
-    return custom_dict[val_status + act_status]
+    model_emo = ei_dt.train_model(target_class = "emotion", verbose = True)
+    emo_status = model_emo.predict(ei_dt.prepare_dataset("emotion", row))
+    return custom_dict[emo_status[0]]
 
 def special_interventions(custom_dict = None):
     print("DEBUG: currently dealing with special")
-    if custom_dict is None:
-        custom_dict = get_intervention_dialogues()
     fun_value = random.randint(1, 100)
     if 85 <= fun_value <= 90:
         return ['rr']

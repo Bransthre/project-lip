@@ -229,5 +229,5 @@ def get_consecutive_num(column, valid_classes):
 def convert_tuple_to_series(row):
     data_dict = {}
     for key, elem in zip(emo_col_names[7:], row):
-        data_dict[key] = elem
-    return pd.Series(data = data_dict)
+        data_dict[key] = [elem]
+    return pd.DataFrame(data = data_dict)

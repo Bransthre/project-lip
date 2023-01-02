@@ -35,20 +35,20 @@ Looks like the day has started! Keep going on!
 @work_5
 Right, seems like at least half of the work should be done! Why not take a small break in between these work hours, coffee or tea?
 @work_7
-It looks like you have a lot of important deadlines coming up. Well, I know the work is significant and expected by others, but don't burn yourself out too much.
+It looks like you have a lot of important deadlines coming up. Well, I know the work is significant and expected by others, but don`t burn yourself out too much.
 @work_9
-9 hours? It's a bit absurd that you're expected that much, go take a bit of rest!
+9 hours? It`s a bit absurd that you`re expected that much, go take a bit of rest!
 @morning
-Good morning, hope today will go smooth regardless of the workload. Today's weather is not bad too!
+Good morning, hope today will go smooth regardless of the workload. Today`s weather is not bad too!
 @noon
 Lunch time! What do you mean, lunch is important!
 @evening
 That was a long day. Well, time to get some dinner and rest at your place!
 @rest_2
-Getting enough rest is really important, but make sure you balance it out with some brain exercises! I'm sure that will help with Alzheimers.
+Getting enough rest is really important, but make sure you balance it out with some brain exercises! I`m sure that will help with Alzheimers.
 @rest_4
-Getting enough rest is important, but too much doesn't mean well either... well, unless it's a holiday! It feels nice to slack a bit, doesn't it.
+Getting enough rest is important, but too much doesn`t mean well either... well, unless it`s a holiday! It feels nice to slack a bit, doesn`t it.
 @neg_val
-Looks like something is really bothering you. If that'll help you feel better, tell me a bit about it?
+Looks like something is really bothering you. If that`ll help you feel better, tell me a bit about it?
 @neg_act
-Don't worry, there will always be a few days in a month that are lower than usual. It's not like I'm finding excuses for slacking!
+Don`t worry, there will always be a few days in a month that are lower than usual. It`s not like I`m finding excuses for slacking!
