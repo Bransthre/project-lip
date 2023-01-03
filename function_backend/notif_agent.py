@@ -19,6 +19,7 @@ ICON_PATH = gl_ds.ICON_PATH
 #TODO: homescreen revival mechanics or make it non-closeable
 EXPIRATION_TIME = 10
 notification.ToastNotification.ExpirationTime = EXPIRATION_TIME
+notification_manager, notifier = None, None
 
 def push_main(homescreen):
     """
@@ -29,6 +30,9 @@ def push_main(homescreen):
     Args:
         homescreen (tK.tk): The homescreen of current management system.
     """
+    global notification_manager, notifier
+    notification_manager = notification.ToastNotificationManager
+    notifier = notification_manager.create_toast_notifier()
     device_check_interval = gl_ds.get_global_attr("checkin_interval")
     ei_survey_interval = device_check_interval * 2
     ei_check_interval = device_check_interval * 3
@@ -73,9 +77,6 @@ def notif_tts_pyttsx(notif_msg):
         engine.say(notif_msg)
         engine.runAndWait()
         engine.stop()
-
-notification_manager = notification.ToastNotificationManager
-notifier = notification_manager.create_toast_notifier()
 
 def get_net_attribute(net_stat, attr):
     """
